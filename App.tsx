@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './style.css';
+import Child from './Child';
 // import { useCustomState } from './useCustomState.hooks';
 
 export default function App() {
@@ -16,8 +17,8 @@ export default function App() {
     <div>
       <input onChange={(e) => setCurrentValue(e.target.value)} />
       <button onClick={() => {}}>Change Value</button>
-      <h3> {`Previous Value ---  ${prevValue}`} </h3>
-      <h3> {`Current Value ---  ${currValue}`} </h3>
+      <Child prevValue={prevValue} currValue={currValue} />
+      <button onClick={() => {}}>Change Color</button>
     </div>
   );
 }
