@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div>
       <input onChange={(e) => setCurrentValue(e.target.value)} />
-      <button onClick={() => {}}>Change Name</button>
+      <button onClick={() => {}}>Change Value</button>
       <h3> {`Previous Name ---  ${prevValue}`} </h3>
       <h3> {`Current Name ---  ${currValue}`} </h3>
     </div>
