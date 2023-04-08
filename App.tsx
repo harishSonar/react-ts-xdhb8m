@@ -6,7 +6,7 @@ import Child from './Child';
 export default function App() {
   let currentValue = '';
   const setCurrentValue = (value) => {
-    [(currentValue = value)];
+    currentValue = value;
   };
 
   // Currently hardcoded, To be removed after implementation
